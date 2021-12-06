@@ -3,8 +3,8 @@ pub mod url_short {
 }
 
 use tonic::{transport::Server, Request, Response, Status};
+use url_short::url_short_client::UrlShortClient;
 use url_short::{Id, Url};
-use url_short::url_short_client::{UrlShortClient};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
